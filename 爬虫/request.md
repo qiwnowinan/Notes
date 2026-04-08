@@ -54,6 +54,8 @@ with open(pdf_name, "wb") as f: # 因为是二进制，所以是wb
     f.write(response.content) # 返回原始的二进制数据。保存图片、视频、PDF 文件时必须用这个。
 print(f"{pdf_name} 已成功下载")
 
+response.encoding = 'utf-8' # 如果乱码
+
 if response.status_code == 200:
     pass # 判断是否成功
 
