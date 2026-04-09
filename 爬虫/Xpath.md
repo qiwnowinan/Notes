@@ -72,5 +72,5 @@ for item in items:
 
 #### 提取
 
-普通提取：`//p/text() # \n   你好 世界   \n"`
-清洗提取：`normalize-space(//p) # "你好 世界"`
+普通提取：`//p/text() # "\n   你好 世界   \n" 返回list`  
+清洗提取：`normalize-space(//p) # "你好 世界"   返回string`
